@@ -18,13 +18,44 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="invisible md:visible container mx-auto inset-x-0 top-0 flex justify-between font-mono">
-          <Link href="/">Home</Link>
-          <Link href="/esu">ESU</Link>
-          <Link href="/experience">Work Experience</Link>
-          <Link href="/johnball">Game Development</Link>
-          <Link href="/frc">FIRST Robotics</Link>
-          <Link href="/hobbies">Hobbies</Link>
+        <div className="w-full h-20 sticky top-0 bg-blue-900">
+          <div className="w-max container mx-auto px-4 h-full">
+            <div className="flex justify-between items-center h-full">
+              <ul className="hidden md:flex gap-x-20">
+                <li>
+                  <Link href="/">
+                    <p>Home</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/esu">
+                    <p>ESU</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/experience">
+                    <p>Work Experience</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/johnball">
+                    <p>Game Development</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/frc">
+                    <p>FIRST Robotics</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/hobbies">
+                    <p>Hobbies</p>
+                  </Link>
+                </li>
+              </ul>
+              {/* Place mobile navigation button here */}
+            </div>
+          </div>
         </div>
         {children}
       </body>
