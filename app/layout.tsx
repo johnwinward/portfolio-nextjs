@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full h-20 sticky top-0 bg-blue-900">
+        <header className="w-full h-20 sticky top-0 bg-blue-900">
           <div className="w-max container mx-auto px-4 h-full">
             <div className="flex justify-between items-center h-full">
-              <ul className="hidden md:flex gap-x-20">
+              <ul className="hidden md:flex gap-x-20 text-white">
                 <li>
                   <Link href="/">
                     <p>Home</p>
@@ -57,7 +57,7 @@ export default function RootLayout({
               {/* Place mobile navigation button here */}
             </div>
           </div>
-        </div>
+        </header>
         {children}
         <Analytics />
       </body>
