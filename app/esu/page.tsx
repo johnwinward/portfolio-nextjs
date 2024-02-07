@@ -1,4 +1,4 @@
-import WIP from "@/public/components/WIP";
+import WIP from "@/components/WIP";
 
 export default function Experience() {
     return(
