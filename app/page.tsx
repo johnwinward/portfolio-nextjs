@@ -1,30 +1,31 @@
 import Image from "next/image";
 import profilePic from '/public/images/john-winward.jpeg'
+import PageSection, { SectionData } from "@/components/PageSection";
 
 export default function Home() {
+  const introSection: SectionData = {
+    img: profilePic,
+    imgAlt: "Photo of John Winward",
+    height: 500,
+    title: "About Me",
+    leftImage: false
+  }
+
+
   return (
-    <main className="flex h-auto flex-col items-center p-24 bg-gray-950">
-      <div className="h-auto text-center text-white">
+    <main>
+      <div className="h-auto text-center text-white mt-32 mb-32">
         <h1 className="text-5xl mb-8 font-mono">Welcome to winward.dev!</h1>
         <p className="text-xl">I&apos;m John Winward, and this is my portfolio website built using NextJS.</p>
       </div>
-      <div className="flex flex-wrap md:flex-nowrap md:flex-row w-full mx-auto justify-center mt-16 h-auto">
-        <div className="text-white items-center w-screen p-2">
-          <div className="text-center w-full mt-12 mb-12 p-12">
-            <h2 className="text-3xl mb-12">About Me</h2>
-            <p className="text-xl">I&apos;m John, a recent college graduate with a degree in computer science from 
-              East Stroudsburg University. My current coding interest is in web development, 
-              which is why I decided to build this project using the NextJS framework. I hope 
-              to learn more about web development through this project, and also create a way 
-              for people to learn more about me.</p>
-          </div>
-        </div>
-        <div className="text-white font-mono items-center w-full p-2">
-          <div className="flex mx-auto justify-center">
-            <Image src={profilePic} alt="Photo of John Winward" className="p-8 justify-center mt-12 mb-12"></Image>
-          </div>
-        </div>
-      </div>
+      
+      <PageSection sectionData={introSection}>
+        I&apos;m John, a recent college graduate with a degree in computer science from 
+        East Stroudsburg University. My current coding interest is in web development, 
+        which is why I decided to build this project using the NextJS framework. I hope 
+        to learn more about web development through this project, and also create a way 
+        for people to learn more about me.
+      </PageSection>
     </main>
   );
 }
