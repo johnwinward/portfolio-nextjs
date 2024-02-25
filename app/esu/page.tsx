@@ -1,6 +1,5 @@
 import diplomaImg from '@/public/images/diploma.png'
 import esuSignImg from '@/public/images/esu-sign.jpeg'
-import Image from 'next/image'
 import csoImg from '@/public/images/csoLogo.png'
 import Link from 'next/link'
 import PageSection, { SectionData } from '@/components/PageSection'
@@ -10,16 +9,11 @@ export default function ESUPage() {
         img: diplomaImg,
         imgAlt: "A college diploma",
         height: 400,
-        title: "",
         leftImage: false
     }
 
     const covidSection: SectionData = {
-        img: null,
-        imgAlt: "",
-        height: -1,
         title: "The Impact of 2020",
-        leftImage: false
     }
     
     const csoSection: SectionData = {
