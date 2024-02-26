@@ -25,9 +25,9 @@ export default function PageSection({children, sectionData}: Props){
                     <Image src={sectionData.img} alt={sectionData.imgAlt} height={sectionData.height} />
                 </div>)}
 
-                <p className="text-white text-center w-full p-12 m-auto text-xl">
+                <div className="text-white text-center w-full p-12 m-auto text-xl">
                     {children}
-                </p>
+                </div>
 
                 {sectionData.img && !sectionData.leftImage && sectionData.imgAlt && (<div className="w-full pt-12 pb-12 flex mx-auto justify-center">
                     <Image src={sectionData.img} alt={sectionData.imgAlt} height={sectionData.height} />
