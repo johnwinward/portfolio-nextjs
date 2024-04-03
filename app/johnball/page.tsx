@@ -2,6 +2,7 @@ import PageSection, { SectionData } from "@/components/PageSection"
 import jb1Image from '@/public/images/jb1.png'
 import jb2Image from '@/public/images/jb2.png'
 import jb3Image from '@/public/images/jb3.png'
+import Link from "next/link"
 
 export default function GameDevPage() {
     const introSectionData: SectionData = {
@@ -110,17 +111,17 @@ export default function GameDevPage() {
             <PageSection sectionData={downloadsSection}>
                 <ul>
                     <li>
-                        <a href="api/johnball" className="underline hover:text-blue-600">JohnBall</a>, 
+                        <Link href="/api/johnball" className="underline hover:text-blue-600">JohnBall</Link>, 
                         Itch.io download <a href="https://halbert47.itch.io/johnball" className="underline hover:text-blue-600">here</a>
                     </li>
                     <br />
                     <li>
-                        <a href="api/johnball2" className="underline hover:text-blue-600">JohnBall 2</a>, 
+                        <Link href="/api/johnball2" className="underline hover:text-blue-600">JohnBall 2</Link>, 
                         Itch.io download <a href="https://halbert47.itch.io/johnball-2" className="underline hover:text-blue-600">here</a>
                     </li>
                     <br />
                     <li>
-                        <a href="api/johnballpong" className="underline hover:text-blue-600">JohnBall Pong</a>, 
+                        <Link href="/api/johnballpong" className="underline hover:text-blue-600">JohnBall Pong</Link>, 
                         Itch.io download <a href="https://halbert47.itch.io/johnball-pong" className="underline hover:text-blue-600">here</a>
                     </li>
                 </ul>
