@@ -43,7 +43,7 @@ export default function GameDevPage() {
             <h1 className="text-white text-center text-5xl mt-32 mb-32">The JohnBall Series</h1>
 
             <PageSection sectionData={introSectionData}>
-                <p>In 2020, East Stroudsburg University hosted an event called "GameJam", an event where individuals 
+                <p>In 2020, East Stroudsburg University hosted an event called GameJam, where individuals 
                     or teams are given a specific time period to make a video game, often within a theme, against others. The best game wins!
                 </p>
                 <br />
@@ -58,7 +58,7 @@ export default function GameDevPage() {
             <PageSection sectionData={jb1SectionData}>
                 <p>
                     Being the average college procrastinator, I ended up with only one day to learn Unity before the weekend-long gamejam (the theme 
-                    being "Only One", which can be seen <a href="https://itch.io/jam/esu-gamejam-1" className="underline hover:text-blue-600">here</a>). I started a tutorial 
+                    being &quot;Only One&quot;, which can be seen <a href="https://itch.io/jam/esu-gamejam-1" className="underline hover:text-blue-600">here</a>). I started a tutorial 
                     for writing Unity games the day before the jam. On Saturday, after some hard work, confusion, and coffee, I submitted JohnBall on Saturday and took Sunday off.
                     <br></br>
                     <br></br>
@@ -73,9 +73,9 @@ export default function GameDevPage() {
                     realized that a game jam would be a PERFECT event for a computer science club to do. The ESU GameJam never happened after 2020, so the CSO GameJam was born.
                     <br />
                     <br />
-                    The 2022 CSO GameJam was open to CSO members, and had the theme of "Arcade". I didn&apos;t want it to be a contest, but a way 
-                    to show off game development skills and have fun. I participated as well, and created a sequel to my first video game, "JohnBall 2: Attack 
-                    of the JohnBalls". In my biased opinion, it was a hit within CSO.
+                    The 2022 CSO GameJam was open to CSO members, and had the theme of &quot;Arcade&quot;. I didn&apos;t want it to be a contest, but a way 
+                    to show off game development skills and have fun. I participated as well, and created a sequel to my first video game, &quot;JohnBall 2: Attack 
+                    of the JohnBalls&quot;. In my biased opinion, it was a hit within CSO.
                     Many <a href="https://itch.io/jam/esu-cso-game-jam" className="underline hover:text-blue-600">great games</a> were made during that jam,
                     and I was happy that we got as many submissions as we did. If it were a contest, JohnBall 2 would not have been the winner. However, my club 
                     now knew me as the creator of JohnBall, and that stuck for the rest of my college career.
@@ -84,7 +84,7 @@ export default function GameDevPage() {
 
             <PageSection sectionData={jb3SectionData}>
                 <p>
-                    In 2023, I submitted a game to the 2nd CSO GameJam, with a theme of Multiplayer. "JohnBall Pong" is just pong, 
+                    In 2023, I submitted a game to the 2nd CSO GameJam, with a theme of Multiplayer. &quot;JohnBall Pong&quot; is just pong, 
                     but themes similar to the other 2 games I made. It allowed simple player customization, and included some easter eggs that 
                     got some laughs. I think this was my most polished JohnBall game, since I had some Unity experience before starting development.
                 </p>
