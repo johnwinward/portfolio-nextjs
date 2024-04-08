@@ -3,8 +3,20 @@ import jb1Image from '@/public/images/jb1.png'
 import jb2Image from '@/public/images/jb2.png'
 import jb3Image from '@/public/images/jb3.png'
 import Link from "next/link"
+import { list } from '@vercel/blob'
 
-export default function GameDevPage() {
+export default async function GameDevPage() {
+    const downloadUrls = new Map()
+    
+    const refreshDownloadUrls = async () => {
+        const { blobs } = await list()
+        blobs.map((blob) => {
+            downloadUrls.set(blob.pathname, blob.downloadUrl)
+        })
+    }
+
+    await refreshDownloadUrls()
+
     const introSectionData: SectionData = {
         title: "Origins"
     }
@@ -111,17 +123,17 @@ export default function GameDevPage() {
             <PageSection sectionData={downloadsSection}>
                 <ul>
                     <li>
-                        <Link href="/api/johnball" className="underline hover:text-blue-600">JohnBall</Link>, 
+                        <Link href={downloadUrls.get('JohnBall.zip')} className="underline hover:text-blue-600">JohnBall</Link>, 
                         Itch.io download <a href="https://halbert47.itch.io/johnball" className="underline hover:text-blue-600">here</a>
                     </li>
                     <br />
                     <li>
-                        <Link href="/api/johnball2" className="underline hover:text-blue-600">JohnBall 2</Link>, 
+                        <Link href={downloadUrls.get('JohnBall2.zip')} className="underline hover:text-blue-600">JohnBall 2</Link>, 
                         Itch.io download <a href="https://halbert47.itch.io/johnball-2" className="underline hover:text-blue-600">here</a>
                     </li>
                     <br />
                     <li>
-                        <Link href="/api/johnballpong" className="underline hover:text-blue-600">JohnBall Pong</Link>, 
+                        <Link href={downloadUrls.get('JohnBallPong.zip')} className="underline hover:text-blue-600">JohnBall Pong</Link>, 
                         Itch.io download <a href="https://halbert47.itch.io/johnball-pong" className="underline hover:text-blue-600">here</a>
                     </li>
                 </ul>

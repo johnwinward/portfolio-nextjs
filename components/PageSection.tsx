@@ -1,6 +1,5 @@
 import Image from "next/image"
-import { NextPage } from "next"
-import { PropsWithChildren, ReactNode } from "react"
+import { ReactNode } from "react"
 
 interface Props {
     children: ReactNode,
@@ -15,7 +14,7 @@ export type SectionData = {
     leftImage?: boolean
 }
 
-export default function PageSection({children, sectionData}: Props){
+function PageSection({children, sectionData}: Props){
     return (
         <>
             {sectionData.title !== "" && (<h2 className="text-white text-center text-4xl mb-12 mt-12">{sectionData.title}</h2>)}
@@ -36,3 +35,5 @@ export default function PageSection({children, sectionData}: Props){
         </>
     )
 }
+
+export default PageSection
