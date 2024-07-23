@@ -35,11 +35,6 @@ function Header() {
                     </Link>
                 </li>
                 <li className="m-auto">
-                    <Link href="/frc">
-                        <p>FIRST Robotics</p>
-                    </Link>
-                </li>
-                <li className="m-auto">
                     <Link href="/hobbies">
                         <p>Hobbies</p>
                     </Link>

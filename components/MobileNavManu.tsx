@@ -28,11 +28,6 @@ function MobileNavMenu({closeOnSelection}: MobileNavMenuProps) {
                 </Link>
             </li>
             <li className="">
-                <Link href="/frc" onClick={closeOnSelection}>
-                    <p>FIRST Robotics</p>
-                </Link>
-            </li>
-            <li className="">
                 <Link href="/hobbies" onClick={closeOnSelection}>
                     <p>Hobbies</p>
                 </Link>
