@@ -14,7 +14,7 @@ export default function Experience() {
             <h1 className="text-white text-center text-5xl mt-32 mb-32">How I Waste Time</h1>
 
             <PageSection sectionData={introSection}>
-                Ever since my parents bought me a Ninendo Wii in 2006, I&apos;ve been a fan of video games.
+                Ever since my parents bought me a Nintendo Wii in 2006, I&apos;ve been a fan of video games.
                 As I got older, I became a fan of not only the newest games, but the games of the past.
                 Some of those games are games from my childhood, but many are from before my time as well.
                 <br />
