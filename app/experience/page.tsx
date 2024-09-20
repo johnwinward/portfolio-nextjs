@@ -31,7 +31,7 @@ export default function Experience() {
                 our chosen framework of Electron, which allows a typical JavaScript/Node.js web application to become a desktop application.
                 <br></br>
                 <br></br>
-                For the two internship extensions, I got to use other technologies and frameworks. These include Microsoft Power Apps/Automate and NextJS.
+                For the two internship extensions, I got to use other technologies and frameworks. These include Microsoft Power Apps/Automate, NextJS and Cypress.
             </PageSection>
 
             <PageSection sectionData={nonDevSection}>
