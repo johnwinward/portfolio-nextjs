@@ -2,10 +2,12 @@ import PageSection, { SectionData } from "@/components/PageSection";
 import tutorImg from "@/public/images/tutor-of-the-month.png"
 
 export default function Experience() {
-    const introSection: SectionData = {
+    const internSection: SectionData = {
         title: 'NREIP Intern at NIWC Pacific',
     }
-
+    const scientistSection: SectionData = {
+        title: 'Scientist at NIWC Pacific'
+    }
     const nonDevSection: SectionData = {
         img: tutorImg,
         imgAlt: 'A image recognizing John Winward for winning tutor of the month in February',
@@ -18,15 +20,18 @@ export default function Experience() {
         <main>
             <h1 className="text-white text-center text-5xl mt-32 mb-32">Work History</h1>
 
-            <PageSection sectionData={introSection}>
+            <PageSection sectionData={scientistSection}>
+                In May of 2024, I was hired by NIWC Pacific Philadelphia to be a full time Software Developer. Since starting, I have developed skills in Angular and .NET Core Web API.
+            </PageSection>
+
+            <PageSection sectionData={internSection}>
                 During the summer of 2023, I was hired as an intern at NIWC Pacific in Philadelphia. This was my first 
                 role as a developer. My internship was extended part time for the fall semester of 2023 and during the winter of early 
                 2024. During the summer, my team of 3 interns, including myself, successfully created a proof of concept application from scratch using
                 our chosen framework of Electron, which allows a typical JavaScript/Node.js web application to become a desktop application.
                 <br></br>
                 <br></br>
-                For the two internship extensions, I got to use other technologies and frameworks. At the time of writing this, I am still working 
-                for NIWC Pacific for my winter internship.
+                For the two internship extensions, I got to use other technologies and frameworks. These include Microsoft Power Apps/Automate and NextJS.
             </PageSection>
 
             <PageSection sectionData={nonDevSection}>
