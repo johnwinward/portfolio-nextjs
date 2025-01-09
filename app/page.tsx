@@ -1,5 +1,4 @@
-import Image from "next/image";
-import profilePic from '/public/images/john-winward.jpeg'
+import profilePic from '../public/images/john-winward.jpeg'
 import PageSection, { SectionData } from "@/components/PageSection";
 
 export default function Home() {
