@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       
       <PageSection sectionData={introSection}>
-        I&apos;m John, a recent college graduate with a degree in computer science from 
+        I&apos;m John, a software developer with a degree in computer science from 
         East Stroudsburg University. My current coding interest is in web development, 
         which is why I decided to build this project using the NextJS framework. I hope 
         to learn more about web development through this project, and also create a way 
