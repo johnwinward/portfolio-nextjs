@@ -123,18 +123,18 @@ export default async function GameDevPage() {
             <PageSection sectionData={downloadsSection}>
                 <ul>
                     <li>
-                        <Link href={downloadUrls.get('JohnBall.zip')} className="underline hover:text-blue-600">JohnBall</Link>, 
-                        Itch.io download <a href="https://halbert47.itch.io/johnball" className="underline hover:text-blue-600">here</a>
+                        Download JohnBall <Link href={downloadUrls.get('JohnBall.zip')} className="underline hover:text-blue-600">here</Link>, 
+                        or use <a href="https://halbert47.itch.io/johnball" className="underline hover:text-blue-600">Itch.io</a> to download.
                     </li>
                     <br />
                     <li>
-                        <Link href={downloadUrls.get('JohnBall2.zip')} className="underline hover:text-blue-600">JohnBall 2</Link>, 
-                        Itch.io download <a href="https://halbert47.itch.io/johnball-2" className="underline hover:text-blue-600">here</a>
+                        Download Johnball 2 <Link href={downloadUrls.get('JohnBall2.zip')} className="underline hover:text-blue-600">here</Link>, 
+                        or use <a href="https://halbert47.itch.io/johnball-2" className="underline hover:text-blue-600">Itch.io</a> to download.
                     </li>
                     <br />
                     <li>
-                        <Link href={downloadUrls.get('JohnBallPong.zip')} className="underline hover:text-blue-600">JohnBall Pong</Link>, 
-                        Itch.io download <a href="https://halbert47.itch.io/johnball-pong" className="underline hover:text-blue-600">here</a>
+                        Download JohnBall Pong <Link href={downloadUrls.get('JohnBallPong.zip')} className="underline hover:text-blue-600">here</Link>, 
+                        or use <a href="https://halbert47.itch.io/johnball-pong" className="underline hover:text-blue-600">Itch.io</a> to download.
                     </li>
                 </ul>
             </PageSection>
